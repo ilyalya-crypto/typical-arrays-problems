@@ -1,15 +1,14 @@
-
-экспорт . min  =  функция  min  ( массив )  {
-  если  ( ! массив  || ! массив . длина )  return  0 ;
-  вернуть  Math . min ( ... массив ) ;
+exports.min = function min (array) {
+  if (!array || !array.length) return 0;
+  return Math.min(...array);
 }
 
-экспорт . max  =  функция  max  ( массив )  {
-  если  ( ! массив  || ! массив . длина )  return  0 ;
-  вернуть  Math . max ( ... массив ) ;
+exports.max = function max (array) {
+  if (!array || !array.length) return 0;
+  return Math.max(...array);
 }
 
-экспорт . avg  =  function  avg  ( array )  {
-  если  ( ! массив  || ! массив . длина )  return  0 ;
-  возвратный  массив . reduce ( ( acc ,  value )  =>  acc  +  value ) / array . длина ;
+exports.avg = function avg (array) {
+  if (!array || !array.length) return 0;
+  return array.reduce((acc, value) => acc + value) / array.length;
 }
